@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>HerTechTrail HTML form assignment</title>
+        <style type="text/css">
+            label{
+                width: 180px;
+                display: inline-block;
+                vertical-align: auto;
+            }
+            #drop{
+                border-radius: 5px;
+            }
+            #pic{
+                border-radius: 5px;
+            }
+            fieldset{
+                margin: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <form>
+                <div>
+                    <fieldset>
+                        <legend>Your address</legend>
+                        <div>
+                            <label for="firstName">First name</label>
+                            <input type="text" id="firstName" required/>
+                        </div>
+                        <br />
+                        <div>
+                            <label for="lastName">Last name</label>
+                            <input type="text" id="lastName" required />
+                        </div>
+                        <br />
+                        <div>
+                            <label for="street">Street</label>
+                            <input type="text" id="Street" required />
+                        </div>
+                        <br />
+                        <div>
+                            <label for="city">City</label>
+                            <input type="text" id="city" required />
+                        </div>
+                        <br />
+                    </fieldset>
+                </div>
+                 <div>
+                    <fieldset>
+                        <legend>Additional details</legend>
+                        <div>
+                            <label for="biography">Biography</label>
+                            <textarea id="biography"></textarea>
+                        </div>
+                        <br />
+                        <div>
+                            <label for="image">Image</label>
+                            <button id="pic">Choose file</button> No file chosen
+                        </div>
+                        <br />
+                        <div>
+                            <label for="drop">Age Group</label>
+                            <select id="drop">
+                                <option value="0 to 9 Years">0 to 9 Years</option>
+                                <option value="10 to 19 Years">10 to 19 Years</option>
+                                <option value="20 to 29 Years">20 to 29 Years</option>
+                            </select>
+                        </div>
+                        <br />
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset>
+                        <legend>Interests</legend>
+                        <div>
+                            <label for="hobbies">Hobbies</label><select id="hobbies" multiple="">
+                                <option>Playing soccer</option>
+                                <option>Dancing</option>
+                                <option>Gardening</option>
+                                <option>Watching movies</option>
+                            </select>
+                        </div>
+                        <br />
+                        <div>
+                            <label for="drop">Favorite car?</label>
+                            <select id="drop">
+                                <option value="volvo">Volvo</option>
+                                <option value="volkswagen">Volkswagen</option>
+                                <option value="ford">Ford</option>
+                            </select>
+                        </div>
+                        <br />
+                        <div>
+                            <label for="publicTrans">Favorite public transport?</label>
+                            <select id="publicTrans" multiple="">
+                                <optgroup label="Ground">
+                                    <option>Train</option>
+                                    <option>Bus</option>
+                                </optgroup>
+                                <optgroup label="Water"></optgroup>
+                                <option>Canoe</option>
+                                <option>Ferry</option>
+                            </select>
+                        </div>
+                        <br />
+                    </fieldset>
+                </div>
+            </form>
+        </main>
+    </body>
+</html>
